@@ -5,9 +5,14 @@ My completed 10 projects during the 6 month Android Basics Nanodegree by Google 
 Design and implement a simple app that displays information about a small business.
 **Android Tags:** *#userinterface*
 
+![singlescreen 270 x 480](https://user-images.githubusercontent.com/14174276/28498574-bde1ef72-6fa0-11e7-8cf2-c409b906c73e.jpg)
+
 # #2 Score Keeper App
 Implement an app to track scores between two teams within a game.
 **Android Tags:** *#userinput #animation*
+![score_keeper](https://user-images.githubusercontent.com/14174276/28498717-549ad232-6fa4-11e7-87c9-0bca194272c2.jpg)
+
+[![score_keeper_2](https://user-images.githubusercontent.com/14174276/28498756-61e0a3d0-6fa5-11e7-8387-8c00faf43164.jpg)](https://www.youtube.com/watch?v=VUdXMtbXQ-U)
 
 # #3 Quiz App
 Design and implement a short quiz app about some topic you are familiar with.
