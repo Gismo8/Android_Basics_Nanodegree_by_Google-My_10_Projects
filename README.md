@@ -18,9 +18,13 @@ Implement an app to track scores between two teams within a game.
 Design and implement a short quiz app about some topic you are familiar with.
 **Android Tags:** *#listview*
 
+![quizapp_video 2](https://user-images.githubusercontent.com/14174276/28499780-05ed3a0c-6fbe-11e7-8642-8005fe1a0429.gif)
+
 # #4 Musical Structure App
 Architect the user experience and technical design of an app to play music for a user.
 **Android Tags:** *#multiscreen #intents #arraylist #listview #customclasses*
+
+![music_structural_app](https://user-images.githubusercontent.com/14174276/28499793-7ecf6ec2-6fbe-11e7-9c95-cee08f827770.gif)
 
 # #5 Report Card 
 Create a custom Java class to model the information in a student report card.
@@ -28,15 +32,21 @@ Create a custom Java class to model the information in a student report card.
 
 # #6: Tour Guide App
 Create an app to guide a user around a city or location of your choice!
-**Android Tags:** *#multiscreen #listview* 
+**Android Tags:** *#multiscreen #listview*
+
+![debrecen_tour_guide](https://user-images.githubusercontent.com/14174276/28499967-4f43d8e8-6fc1-11e7-8159-315147ddb058.gif)
 
 # #7: Book Listing App
 Create an app to list the published books on a given topic using the Google Books API.
 **Android Tags:** *#jsonparsing #HTTPnetworking #threads #parallelism #recyclerview* 
 
+![book_listing_video](https://user-images.githubusercontent.com/14174276/28500003-f03aed90-6fc1-11e7-8792-f483ac37e1e8.gif)
+
 # #8: News App
 Create an app to display recent news stories on a topic of your choice using a web API.
 **Android Tags:** *#jsonparsing #HTTPnetworking #threads #parallelism #recyclerview*
+
+![guardian_video 1](https://user-images.githubusercontent.com/14174276/28500081-0b281686-6fc3-11e7-9213-94d27a384b1f.gif)
 
 # #9: Habit Tracker App
 Create an app to track your habits.
@@ -44,6 +54,9 @@ Create an app to track your habits.
 
 # #10: Inventory App
 Create an app to track the inventory of a retail store, including current stock and supplier information.
-**Android Tags:** *#sqlite #contractclass #cursor #contentprovider#xursorloader*
+**Android Tags:** *#sqlite #contractclass #cursor #contentprovider#cursorloader*
+
+![inventory_app](https://user-images.githubusercontent.com/14174276/28500234-d63cc3c0-6fc4-11e7-9c8a-2c69f0f0f4c2.gif)
+
 
 ** **NOTE** ** **If you find this repository useful, please give a ★ at the top to make me happy :)**
