@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Math Love Quiz</string>
+    <string name="hello">"This is a very simple math quiz, to test your knowledge! Don't forget to anwser all questions and then get a grade! Hope you will enjoy it! :) Ready? Go!"</string>
+    <string name="firstq">"1.) First question: How can I call you?"</string>
+    <string name="secondq">"What does describe the number 3476?"</string>
+    <string name="thirdq">"3.) 2, 4, 7, 14, 17, ... \nWhat is next number in the row?"</string>
+    <string name="fourthq">"4.) Give me an odd number:"</string>
+    <string name="fifthq">"5.) Give me an even number:"</string>
+    <string name="sixthq">"6.) How much does one angle of an equilateral triangle measure?"</string>
+    <string name="seventhq">"7.) What kind of a plane figure do you see in the picture?"</string>
+    <string name="eighthq">"8.) Every square is a rectangle and every rectangle is a square."</string>
+    <string name="ninthq">"9.) Last question: How much is 5+9?"</string>
+    <string name="math_love_quiz">Math Love Quiz</string>
+    <string name="hey_there">Hey there,</string>
+    <string name="positive_number">It\'s a positive number</string>
+    <string name="negative_number">It\'s a negative number</string>
+    <string name="odd_number">It\'s an odd number</string>
+    <string name="even_number">It\'s an even number</string>
+    <string name="ninety_degrees">90°</string>
+    <string name="sixty_degrees">60°</string>
+    <string name="fourty_five_degrees">45°</string>
+    <string name="triangle">Triangle</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="square">Square</string>
+    <string name="true_answer">True</string>
+    <string name="false_answer">False</string>
+    <string name="fourteen">14</string>
+    <string name="fifteen">15</string>
+    <string name="sixteen">16</string>
+</resources>

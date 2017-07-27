@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sights"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="@string/sights" />
+        <item
+            android:id="@+id/nav_cafes"
+            android:icon="@drawable/ic_local_cafe_black_24dp"
+            android:title="@string/cafés" />
+        <item
+            android:id="@+id/nav_restaurants"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="@string/restaurants" />
+        <item
+            android:id="@+id/nav_hotels"
+            android:icon="@drawable/ic_local_hotel_black_24dp"
+            android:title="@string/hotels" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share"
+                android:actionProviderClass=
+                    "android.widget.ShareActionProvider"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/send" />
+        </menu>
+    </item>
+
+</menu>

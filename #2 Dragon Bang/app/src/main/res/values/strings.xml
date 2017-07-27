@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dragon Bang</string>
+    <string name="health">Health</string>
+    <string name="goku">Goku</string>
+    <string name="score">Score</string>
+    <string name="killer_ball">Killer Ball</string>
+    <string name="eye_laser">Eye Laser</string>
+    <string name="kamehame">Kamehameha</string>
+    <string name="spirit_bomb">Spirit Bomb</string>
+    <string name="rematch">Rematch</string>
+    <string name="frieza">Frieza</string>
+    <string name="score_number">0</string>
+    <string name="health_number">100</string>
+    <string name="ki_blast">Ki Blast</string>
+</resources>

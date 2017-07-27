@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        style="@style/rematchButton"
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp30"
+        android:onClick="reSet"
+        android:text="@string/rematch" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp60"
+            android:scaleType="centerCrop"
+            android:src="@drawable/boxingheadertop" />
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp200"
+                    android:background="@drawable/sceneleft">
+
+                    <ImageView
+                        android:id="@+id/mrBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp160"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/dp6"
+                        android:src="@drawable/freeza"
+                        />
+
+                    <ImageView
+                        android:id="@+id/blueHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp150"
+                        android:paddingLeft="@dimen/dp20"
+                        android:paddingStart="@dimen/dp20"
+                        android:src="@drawable/bang"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/blueabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dp30"
+                        android:src="@drawable/kapow"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/bluechest"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp90"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dp50"
+                        android:paddingRight="@dimen/dp20"
+                        android:src="@drawable/pow2"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+                <TextView
+                    style="@style/nameContainerFrieza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frieza" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/score_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/score" />
+
+
+                        <TextView
+                            android:id="@+id/mrblue_score"
+                            style="@style/score_number_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/score_number" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/score_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/health" />
+
+
+                        <TextView
+                            android:id="@+id/mrblue_health"
+                            style="@style/score_number_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/health_number" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/blue"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:gravity="right|center">
+
+                        <ImageView
+                            android:id="@+id/blueHitHead"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/bang" />
+
+                        <Button
+                            style="@style/blue_button"
+                            android:layout_width="@dimen/dp95"
+                            android:layout_height="@dimen/dp30"
+                            android:onClick="mrBlueHitsHead"
+                            android:text="@string/killer_ball"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:gravity="right|center">
+
+                        <ImageView
+                            android:id="@+id/blueHitAbs"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/kapow" />
+
+                        <Button
+                            style="@style/blue_button"
+                            android:layout_width="@dimen/dp95"
+                            android:layout_height="@dimen/dp30"
+                            android:onClick="mrBlueHitsAbs"
+                            android:text="@string/eye_laser" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:gravity="right|center">
+
+                        <ImageView
+                            android:id="@+id/blueHitChest"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/pow2" />
+
+                        <Button
+                            style="@style/blue_button"
+                            android:layout_width="@dimen/dp95"
+                            android:layout_height="@dimen/dp30"
+                            android:onClick="mrBlueHitsChests"
+                            android:text="@string/ki_blast" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/sceneright">
+
+                    <ImageView
+                        android:id="@+id/mrRedView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp180"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/goku" />
+
+
+                    <ImageView
+                        android:id="@+id/redHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp150"
+                        android:src="@drawable/bang"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/redabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dp50"
+                        android:src="@drawable/kapow"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/redchest"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp120"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="@dimen/dp70"
+                        android:paddingLeft="@dimen/dp20"
+                        android:src="@drawable/pow2"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/nameContainerGoku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goku" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            style="@style/score_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/score" />
+
+
+                        <TextView
+                            android:id="@+id/mrred_score"
+                            style="@style/score_number_style_red"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/score_number" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp1"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/score_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/health" />
+
+
+                        <TextView
+                            android:id="@+id/mrred_health"
+                            style="@style/score_number_style_red"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/health_number" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/dp6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:gravity="left|center">
+
+                        <Button
+                            style="@style/red_button"
+                            android:layout_width="@dimen/dp95"
+                            android:layout_height="@dimen/dp30"
+                            android:onClick="mrRedHitsHead"
+                            android:text="@string/kamehame" />
+
+                        <ImageView
+                            android:id="@+id/redHitHead"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/bang" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:gravity="left|center">
+
+
+                        <Button
+                            style="@style/red_button"
+                            android:layout_width="@dimen/dp95"
+                            android:layout_height="@dimen/dp30"
+                            android:onClick="mrRedHitsAbs"
+                            android:text="@string/spirit_bomb" />
+
+                        <ImageView
+                            android:id="@+id/redHitAbs"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/kapow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:gravity="left|center"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            style="@style/red_button_biggerText"
+                            android:layout_width="@dimen/dp95"
+                            android:layout_height="@dimen/dp30"
+                            android:onClick="mrRedHitsChest"
+                            android:text="Ki Blast" />
+
+                        <ImageView
+                            android:id="@+id/redHitChest"
+                            android:layout_width="@dimen/image_size"
+                            android:layout_height="@dimen/image_size"
+                            android:src="@drawable/pow2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bangIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp80"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dbbangicon1" />
+
+</RelativeLayout>
+
+
+
+
+
+

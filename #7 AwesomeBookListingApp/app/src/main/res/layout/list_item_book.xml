@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/element_padding"
+    android:paddingRight="@dimen/general_padding">
+
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="@dimen/book_width"
+        android:layout_height="match_parent"
+        android:padding="@dimen/element_padding"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/element_padding"
+        android:paddingStart="@dimen/element_padding">
+
+        <TextView
+            android:id="@+id/book_title"
+            style="@style/book_title_style"
+            tools:text="The History of Java" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/list_item_element_style"
+                android:text="Written by: " />
+
+            <TextView
+                android:id="@+id/book_authors"
+                style="@style/list_item_element_style"
+                tools:text="Sir Thomas Stamford Raffles" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

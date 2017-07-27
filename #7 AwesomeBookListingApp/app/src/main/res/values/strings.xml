@@ -1,0 +1,12 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">AwesomeBookListingApp</string>
+    <string name="enter_keywords">Enter your keywords!</string>
+    <string name="welcome_text">\"A reader lives a thousand lives before he dies\"</string>
+    <string name="search_books_online">Find your next book</string>
+    <string name="search">Search</string>
+    <string name="connection_error">Connection error, please check your connection</string>
+    <string name="no_books_message">No books found for keywords: <xliff:g example="ékhdym" id="keywords">%s</xliff:g></string>
+    <string name="welcome">Welcome!</string>
+    <string name="books_you_want">Books you might be looking for</string>
+    <string name="no_connection">Please connect to the internet!</string>
+</resources>

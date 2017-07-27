@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/general_margin"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="centerCrop">
+
+        <ImageView
+            android:id="@+id/product_picture"
+            style="@style/AddImage"
+            android:src="@drawable/ic_insert_photo_white_48dp"></ImageView>
+
+        <TextView
+            android:id="@+id/add_photo_text"
+            style="@style/AddImageText"
+            android:text="@string/add_photo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/CategoryName"
+                android:text="@string/product_name" />
+
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditText"
+                android:hint="@string/hintName"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/CategoryName"
+                android:text="@string/product_price" />
+
+            <EditText
+                android:id="@+id/edit_product_price"
+                style="@style/EditText"
+                android:hint="@string/hintPrice"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryName"
+                android:text="@string/supplierName" />
+
+            <EditText
+                android:id="@+id/supplier_name"
+                style="@style/EditText"
+                android:hint="@string/hintSupplierName"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CategoryName"
+                android:text="@string/supplierEmail" />
+
+            <EditText
+                android:id="@+id/supplier_email"
+                style="@style/EditText"
+                android:hint="@string/hintSupplierEmail"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_minus"
+            style="@style/buttonMin"
+            android:onClick="decrement"
+            android:text="@string/minus" />
+
+        <TextView
+            android:id="@+id/edit_quantity_text_view"
+            style="@style/quantityProd"
+            android:hint="0" />
+
+        <Button
+            android:id="@+id/button_plus"
+            style="@style/buttonPlus"
+            android:onClick="increment"
+            android:text="@string/plus" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_order"
+        style="@style/orderButton"
+        android:onClick="order"
+        android:text="@string/orderMore" />
+</LinearLayout>

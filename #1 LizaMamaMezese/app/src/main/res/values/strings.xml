@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Liza Mama Mezese</string>
+    <string name="title">Liza Mama Gingerbreads</string>
+    <string name="adress"> 12 Hajnal Utca, Komádi</string>
+    <string name="webpage">www.lizamama.hu</string>
+    <string name="about_us">About Us</string>
+    <string name="about_us_content">Gingerbreads handmade with love, for the most special moments of you and your beloved ones.</string>
+
+</resources>

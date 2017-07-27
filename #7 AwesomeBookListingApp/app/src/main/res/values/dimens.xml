@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_padding">16dp</dimen>
+    <dimen name="edit_text_margin_left_right">10dp</dimen>
+    <dimen name="element_margins">16dp</dimen>
+    <dimen name="text_big_margins">55dp</dimen>
+    <dimen name="welcome_text_size">30sp</dimen>
+    <dimen name="element_padding">4dp</dimen>
+    <dimen name="book_title_text_size">18sp</dimen>
+    <dimen name="book_width">50dp</dimen>
+    <dimen name="quote_text_size">18sp</dimen>
+</resources>

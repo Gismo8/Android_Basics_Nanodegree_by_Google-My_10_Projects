@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.simplemathquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6eae6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mathback" />
+
+            <TextView
+                style="@style/centerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTitleBackground"
+                android:padding="10dp"
+                android:text="@string/math_love_quiz"
+                android:textAlignment="center"
+                android:textColor="@color/colorTitleText"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/matchParentStyle"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <TextView
+                style="@style/wrapContentStyle"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/hey_there"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="24sp" />
+
+            <TextView
+                style="@style/TextStyle"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="12dp"
+                android:text="@string/hello" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/firstq" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/secondq" />
+
+                <CheckBox
+                    android:id="@+id/first_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/positive_number"
+                    android:textColor="@color/colorText" />
+
+                <CheckBox
+                    android:id="@+id/second_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/negative_number"
+                    android:textColor="@color/colorText" />
+
+                <CheckBox
+                    android:id="@+id/third_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/odd_number"
+                    android:textColor="@color/colorText" />
+
+                <CheckBox
+                    android:id="@+id/fourth_checkbox"
+                    style="@style/wrapContentStyle"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/even_number"
+                    android:textColor="@color/colorText" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/thirdq" />
+
+                <EditText
+                    android:id="@+id/sequence_number"
+                    style="@style/EditText" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/fourthq" />
+
+                <EditText
+                    android:id="@+id/odd_number"
+                    style="@style/EditText"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/fifthq" />
+
+                <EditText
+                    android:id="@+id/even_number"
+                    style="@style/EditText"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/sixthq" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        style="@style/ImageStyle"
+                        android:src="@drawable/triangle" />
+
+                    <RadioGroup
+                        style="@style/RadioGroup"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="24dp">
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="@string/ninety_degrees" />
+
+                        <RadioButton
+                            android:id="@+id/triangle_angle"
+                            style="@style/RadioButton"
+                            android:text="@string/sixty_degrees" />
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="@string/fourty_five_degrees" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/seventhq" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        style="@style/ImageStyle2"
+                        android:src="@drawable/rectangle" />
+
+                    <RadioGroup
+                        style="@style/RadioGroup"
+                        android:layout_marginLeft="24dp">
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="@string/triangle" />
+
+                        <RadioButton
+                            android:id="@+id/rectangle"
+                            style="@style/RadioButton"
+                            android:text="@string/rectangle" />
+
+                        <RadioButton
+                            style="@style/RadioButton"
+                            android:text="@string/square" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/eighthq" />
+
+                <RadioGroup style="@style/RadioGroup">
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:text="@string/true_answer" />
+
+                    <RadioButton
+                        android:id="@+id/square_false"
+                        style="@style/RadioButton"
+                        android:text="@string/false_answer" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:src="@drawable/pagebrk3" />
+
+            <LinearLayout style="@style/questionBox">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/ninthq" />
+
+                <RadioGroup style="@style/RadioGroup">
+
+                    <RadioButton
+                        android:id="@+id/firstfirst"
+                        style="@style/RadioButton"
+                        android:text="@string/fourteen" />
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:text="@string/fifteen" />
+
+                    <RadioButton
+                        style="@style/RadioButton"
+                        android:text="@string/sixteen" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/LineBreakerStyle"
+                android:layout_width="wrap_content"
+                android:src="@drawable/fin" />
+
+            <RelativeLayout
+                style="@style/matchParentStyle"
+                android:layout_gravity="center_horizontal">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/score_button"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="showScore"
+                    android:padding="15dp"
+                    fancy:fb_borderColor="#98b899"
+                    fancy:fb_borderWidth="3dp"
+                    fancy:fb_defaultColor="#FFFFFF"
+                    fancy:fb_focusColor="#d0edd1"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text="SUBMIT ANSWERS"
+                    fancy:fb_textColor="#98b899" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

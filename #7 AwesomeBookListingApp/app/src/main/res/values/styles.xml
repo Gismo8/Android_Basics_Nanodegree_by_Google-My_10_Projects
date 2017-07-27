@@ -1,0 +1,94 @@
+    <resources>
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+        <!-- Theme with no Action Bar-->
+        <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <!-- Book Activity Styles -->
+        <style name="text_view_style">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_gravity">center_horizontal</item>
+            <item name="android:textSize">@dimen/welcome_text_size</item>
+            <item name="android:textColor">@color/colorWhiteText</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:shadowColor">#111</item>
+            <item name="android:shadowRadius">10</item>
+            <item name="android:shadowDx">0.2</item>
+            <item name="android:shadowDy">0.2</item>
+        </style>
+
+        <style name="text_view_style2">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginLeft">@dimen/text_big_margins</item>
+            <item name="android:layout_marginRight">@dimen/text_big_margins</item>
+            <item name="android:layout_marginTop">@dimen/element_margins</item>
+            <item name="android:textSize">@dimen/quote_text_size</item>
+            <item name="android:textStyle">normal</item>
+        </style>
+
+
+        <style name="edit_text_style">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginLeft">@dimen/edit_text_margin_left_right</item>
+            <item name="android:layout_marginRight">@dimen/edit_text_margin_left_right</item>
+            <item name="android:layout_marginTop">@dimen/element_margins</item>
+            <item name="android:gravity">center_horizontal</item>
+            <item name="android:imeOptions">actionSearch</item>
+            <item name="android:inputType">textCapSentences</item>
+        </style>
+
+        <style name="button_style">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_gravity">center_horizontal</item>
+            <item name="android:layout_marginTop">@dimen/element_margins</item>
+            <item name="android:background">@color/colorPrimary</item>
+            <item name="android:textColor">@color/colorWhiteText</item>
+        </style>
+
+        <!-- Book List Activity styles -->
+        <style name="list_item_element_style">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:ellipsize">end</item>
+            <item name="android:maxLines">1</item>
+            <item name="android:paddingBottom">@dimen/general_padding</item>
+        </style>
+
+        <style name="book_title_style">
+            <item name="android:paddingTop">@dimen/element_padding</item>
+            <item name="android:paddingBottom">@dimen/element_padding</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">@color/colorPrimary</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">@dimen/book_title_text_size</item>
+            <item name="android:ellipsize">end</item>
+            <item name="android:maxLines">1</item>
+        </style>
+
+        <style name="Books_you_find">
+            <item name="android:layout_centerVertical">true</item>
+            <item name="android:layout_centerHorizontal">true</item>
+            <item name="android:textColor">@color/colorWhiteText</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:paddingLeft">@dimen/general_padding</item>
+            <item name="android:shadowColor">#111</item>
+            <item name="android:shadowRadius">10</item>
+            <item name="android:shadowDx">0.2</item>
+            <item name="android:shadowDy">0.2</item>
+        </style>
+    </resources>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ListItemRoot">
+
+    <LinearLayout style="@style/ListItem">
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_insert_photo_white_48dp" />
+
+        <LinearLayout
+            android:id="@+id/item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_product"
+                style="@style/ProdName"
+                android:text="@string/dummyDataName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text_product"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/CurrencyText"
+                    android:text="@string/currency" />
+
+                <TextView
+                    android:id="@+id/text_product_price"
+                    style="@style/ProdPrice"
+                    android:text="@string/dummyDataPrice" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_product_quantity"
+                    style="@style/ProdQuantity"
+                    tools:text="5" />
+
+                <TextView
+                    android:id="@+id/text_available"
+                    style="@style/AvailableText"
+                    android:text="@string/availableProduct" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/buy"
+            style="@style/buyNow"
+            android:background="@drawable/button_shape"
+            android:text="@string/buy_now" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorPrimaryOpaque"></LinearLayout>
+</LinearLayout>

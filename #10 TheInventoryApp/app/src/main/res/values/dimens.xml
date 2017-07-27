@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="category_padding">8dp</dimen>
+    <dimen name="list_small_text">16sp</dimen>
+    <dimen name="add_image_text">20sp</dimen>
+    <dimen name="button_text">24sp</dimen>
+    <dimen name="add_quantity_text">26sp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="general_margin">16dp</dimen>
+    <dimen name="image">150dp</dimen>
+    <dimen name="image_padding">30dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="list_height">100dp</dimen>
+    <dimen name="list_item_padding">4dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+</resources>
