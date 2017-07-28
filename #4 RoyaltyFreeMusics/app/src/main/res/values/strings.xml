@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Royalty Free Music</string>
+    <string name="title_home">Styles</string>
+    <string name="title_browse">Browse</string>
+    <string name="title_now_playing">Now Playing</string>
+    <string name="search_activity">This is the Search Activity</string>
+    <string name="home_activity">This is the Home Activity</string>
+    <string name="now_playing_activity">This is the "Now Playing" Activity</string>
+    <string name="home_intro">With the help of this app, you can find royalty free music for you mobile, web or video projects. You can use them freely. Choose your style here and browse songs of that style on the next activity.</string>
+    <string name="browse_intro">According to the previously selected genre, you can browse the list of the tracks in this activity </string>
+    <string name="now_playing_intro"> In this activity you see which song is played. You can use all use all usual controls to manage the chosen song.</string>
+    <string name="browse_activity_title">Rock</string>
+    <string name="mock_artist">BenSound</string>
+    <string name="mock_song_name">Happiness</string>
+    <string name="track_remaining">2:34</string>
+    <string name="track_total_length">4:42</string>
+    <string name="support_me">So am I!</string>
+    <string name="title_coffe">Coffee Lover?</string>
+    <string name="payment_intro">Royalty Free Music is a free app. You can download music freely and use the tracks for your own good. I want to keep it that way. I also don\'t not want to ruin the joy of using this app with forced ads to make money. However if you would like to support, me donate 1 USD here with the use of the below paypal button, which will get me a coffee to keep going and improve this app! Thank you! I hope you love Royalty Free Music! :)</string>
+    <string name="paypal_intro">To implement payment I will use PayPal Android SDK following all instructions found in their repository on GitHub.  The SDK supports two kind of payments. I will need the Single Payment use case. Steps:  1. Accept a Single Payment and receive back a proof of payment. 2. On your server, Verify the Payment, Capture the Payment, or Process the Order (PayPal Developer site) using PayPal\'s API.</string>
+</resources>

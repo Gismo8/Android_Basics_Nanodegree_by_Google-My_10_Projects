@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostBlack"
+    android:orientation="vertical"
+    tools:context="com.example.android.royaltyfreemusic.BrowseActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    style="@style/TitleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/basic_margin"
+                    android:text="@string/title_coffe" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/world1" />
+
+                    <TextView
+                        style="@style/home_button_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/support_me" />
+
+                </FrameLayout>
+
+                <TextView
+                    style="@style/intro_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:text="@string/payment_intro" />
+
+                <ImageView
+                    android:id="@+id/payPalImage"
+                    android:layout_width="@dimen/dp280"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:clickable="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/paypal_donate" />
+
+
+                <TextView
+                    style="@style/intro_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/almostBlack"
+                    android:text="@string/paypal_intro" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/black"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeButton"
+            style="@style/button_active"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:text="@string/title_home" />
+
+        <Button
+            android:id="@+id/browseButton"
+            style="@style/button_active"
+            android:drawableTop="@drawable/ic_search_black_24dp"
+            android:text="@string/title_browse" />
+
+        <Button
+            android:id="@+id/nowPlayingButton"
+            style="@style/button_active"
+            android:drawableTop="@drawable/ic_play_circle_outline_black_24dp"
+            android:text="@string/title_now_playing" />
+    </LinearLayout>
+
+</LinearLayout>

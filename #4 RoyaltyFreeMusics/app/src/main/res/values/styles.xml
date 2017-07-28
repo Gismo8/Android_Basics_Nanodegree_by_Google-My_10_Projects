@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:textSize">38sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="intro_text">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/colorIntroText</item>
+        <item name="android:paddingLeft">@dimen/basic_margin</item>
+        <item name="android:paddingRight">@dimen/basic_margin</item>
+        <item name="android:paddingTop">@dimen/basic_margin2</item>
+        <item name="android:paddingBottom">@dimen/basic_margin2</item>
+        <item name="android:background">@color/almostBlack</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="home_button_title">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="frameStyle">
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="styleArtist">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/basic_margin2</item>
+    </style>
+
+    <style name="styleSongName">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorIntroText</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="track_length">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorIntroText</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="button_inactive">
+        <item name="android:textColor">@color/colorIntroText</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:drawableTint">@color/colorIntroText</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+    </style>
+
+    <style name="button_active" parent="button_inactive">
+        <item name="android:drawableTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+</resources>
