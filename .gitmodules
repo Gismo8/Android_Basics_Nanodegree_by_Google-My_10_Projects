@@ -1,3 +1,6 @@
 [submodule "#4 RoyaltyFreeMusic"]
 	path = "#4 RoyaltyFreeMusic"
 	url = "C:\\Users\\gismo\\AndroidStudioProjects\\Android_Basics_Nanodegree_by_Google-My_10_Projects\\#4 RoyaltyFreeMusic"
+[submodule "#3 MathLoveQuiz/Math-Quizz-App"]
+	path = "#3 MathLoveQuiz/Math-Quizz-App"
+	url = ../Math-Quizz-App.git
